@@ -1,95 +1,57 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import HomeAboutCard from "@/components/home/HomeAboutCard";
+import HomeBlogCard from "@/components/home/HomeBlogCard";
+import HomeContactCard from "@/components/home/HomeContactCard";
+import HomeCredentialsCard from "@/components/home/HomeCredentialsCard";
+import HomeLetsWorkCard from "@/components/home/HomeLetsWorkCard";
+import HomeNumbersCard from "@/components/home/HomeNumbersCard";
+import HomeProfileCard from "@/components/home/HomeProfileCard";
+import HomeProjectsCard from "@/components/home/HomeProjectsCard";
+import HomeServiceCard from "@/components/home/HomeServiceCard";
+import Footer from "@/components/layouts/Footer";
+import NavBar from "@/components/layouts/NavBar";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <>
+      <main className="main-homepage">
+        <NavBar />
+        <section className="about-area">
+          <div className="container">
+            <div className="row">
+              <div class="col-md-6 aos-init aos-animate" data-aos="zoom-in">
+                <HomeProfileCard />
+              </div>
+              <div className="col-md-6">
+                <div className="about-credentials-wrap">
+                  <HomeAboutCard />
+                  <div className="gx-row d-flex gap-24">
+                    <HomeCredentialsCard />
+                    <HomeProjectsCard />
+                  </div>
+                </div>
+              </div>
+              <div className="row mt-24">
+                <div className="col-md-12">
+                  <div className="blog-service-profile-wrap d-flex gap-24">
+                    <HomeBlogCard />
+                    <HomeServiceCard />
+                    <HomeContactCard />
+                  </div>
+                </div>
+              </div>
+              <div className="row mt-24">
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-in">
+                  <HomeNumbersCard />
+                </div>
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-in">
+                  <HomeLetsWorkCard />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <Footer />
+      </main>
+    </>
+  );
 }
