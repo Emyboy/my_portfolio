@@ -7,7 +7,7 @@ export default function HomeLetsWorkCard() {
       <img src="/assets/images/bg1.png" alt="BG" class="bg-img" />
       <img src="/assets/images/icon2.png" alt="Icon" class="star-icon" />
       <h1>
-        Let's <br />
+        {`Let's`} <br />
         work <span>together.</span>
       </h1>
       <a href="#" class="about-btn">
