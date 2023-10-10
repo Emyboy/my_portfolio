@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function NavBar() {
@@ -5,14 +6,14 @@ export default function NavBar() {
     <header className="header-area">
       <div className="container">
         <div className="gx-row d-flex align-items-center justify-content-between">
-          <a href="index.html" className="logo">
+          <Link href="/" className="logo">
             <img src="assets/images/logo.svg" alt="Logo" />
-          </a>
+          </Link>
 
           <nav className="navbar">
             <ul className="menu">
               <li className="active">
-                <a href="index.html">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
                 <a href="about.html">About</a>

@@ -7,7 +7,7 @@ export default function HomeContactCard() {
         <img src="assets/images/bg1.png" alt="BG" className="bg-img" />
         <div className="inner-profile-icons shadow-box">
           <a href="#">
-            <i className="iconoir-dribbble"></i>
+            <i className="iconoir-github"></i>
           </a>
           <a href="#">
             <i className="iconoir-twitter"></i>

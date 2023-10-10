@@ -10,7 +10,7 @@ export default  () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="infos">
             <h4>more about me</h4>
-            <h1>Credentials</h1>
+            <h1>Certificates</h1>
           </div>
 
           <a href="credentials.html" className="about-btn">
