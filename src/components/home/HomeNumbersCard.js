@@ -6,7 +6,7 @@ export default function HomeNumbersCard() {
       <img src="/assets/images/bg1.png" alt="BG" class="bg-img" />
       <div class="clients d-flex align-items-start gap-24 justify-content-center">
         <div class="client-item">
-          <h1>07</h1>
+          <h1>04+</h1>
           <p>
             Years <br />
             Experience
@@ -14,7 +14,7 @@ export default function HomeNumbersCard() {
         </div>
 
         <div class="client-item">
-          <h1>+125</h1>
+          <h1>13+</h1>
           <p>
             CLIENTS <br />
             WORLDWIDE
@@ -22,7 +22,7 @@ export default function HomeNumbersCard() {
         </div>
 
         <div class="client-item">
-          <h1>+210</h1>
+          <h1>4+</h1>
           <p>
             Total <br />
             Projects

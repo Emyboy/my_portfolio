@@ -1,38 +1,36 @@
+import { NAV_LINKS } from "@/DATABASE";
 import Link from "next/link";
 import React from "react";
 
-export default function NavBar() {
+export default function NavBar({ activePage }) {
   return (
 		<header className="header-area">
 			<div className="container">
 				<div className="gx-row d-flex align-items-center justify-content-between">
 					<Link href="/" className="logo">
-						<img src="assets/images/logo.svg" alt="Logo" />
+						<img src="/logo_fill.png" alt="Logo" width={80} />
 					</Link>
 
 					<nav className="navbar">
 						<ul className="menu">
-							<li className="active">
-								<Link href="/">Home</Link>
-							</li>
-							<li>
-								<a href="about.html">About</a>
-							</li>
-							<li>
-								<a href="works.html">Works</a>
-							</li>
-							<li>
-								<a href="contact.html">Contact</a>
-							</li>
+							{
+								NAV_LINKS.map(link => {
+									return (
+										<li className={activePage === link.name && `active`} key={link.name}>
+											<Link href={link.route}>{link.name}</Link>
+										</li>
+									)
+								})
+							}
 						</ul>
-						<a href="contact.html" className="theme-btn">
+						<Link href="/contact" className="theme-btn">
 							{`Let's talk`}
-						</a>
+						</Link>
 					</nav>
 
-					<a href="contact.html" className="theme-btn">
+					<Link href="/contact" className="theme-btn">
 						{`Let's talk`}
-					</a>
+					</Link>
 
 					<div className="show-menu">
 						<span></span>

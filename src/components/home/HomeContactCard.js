@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HomeContactCard() {
@@ -19,9 +20,9 @@ export default function HomeContactCard() {
             <h1>Profiles</h1>
           </div>
 
-          <a href="contact.html" className="about-btn">
+          <Link href="/contact" className="about-btn">
             <img src="assets/images/icon.svg" alt="Button" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

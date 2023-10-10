@@ -19,8 +19,14 @@ export default function RootLayout({ children }) {
 					rel="stylesheet"
 					href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
 				/>
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></link>
 			</head>
-			<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+			<body
+				data-aos-easing="ease"
+				data-aos-duration="1500"
+				data-aos-delay="0"
+				style={{ background: '#0F0F0F' }}
+			>
 				<Providers>{children}</Providers>
 			</body>
 		</html>
