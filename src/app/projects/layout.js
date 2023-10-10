@@ -5,7 +5,7 @@ import React from 'react'
 export default function layout({ children }) {
 	return (
 		<main className="main-workspage">
-			<NavBar />
+			<NavBar activePage={'Projects'} />
 			{children}
 			<Footer />
 		</main>

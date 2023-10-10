@@ -6,7 +6,7 @@ export default function AboutAvatarCard() {
 			<div class="about-image-box shadow-box">
 				<img src="assets/images/bg1.png" alt="BG" class="bg-img" />
 				<div class="image-inner">
-					<img src="assets/images/me2.png" alt="About Me" />
+					<img src="/img/mee.jpg" alt="About Me" />
 				</div>
 			</div>
 		</div>

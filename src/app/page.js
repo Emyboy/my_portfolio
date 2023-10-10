@@ -14,7 +14,7 @@ export default function Home() {
 	return (
 		<>
 			<main className="main-homepage">
-				<NavBar />
+				<NavBar activePage={'Home'} />
 				<section className="about-area">
 					<div className="container">
 						<div className="row">
