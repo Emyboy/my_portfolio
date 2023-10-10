@@ -20,7 +20,12 @@ export default function RootLayout({ children }) {
 					href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
 				/>
 			</head>
-			<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+			<body
+				data-aos-easing="ease"
+				data-aos-duration="1500"
+				data-aos-delay="0"
+				style={{ background: '#0F0F0F' }}
+			>
 				<Providers>{children}</Providers>
 			</body>
 		</html>
