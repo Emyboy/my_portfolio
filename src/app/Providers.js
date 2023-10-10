@@ -5,7 +5,7 @@ import { Next13ProgressBar } from 'next13-progressbar'
 const Providers = ({ children }) => {
 	return (
 		<>
-			{children}
+			{/* {children} */}
 			<>
 				{children}
 				<Next13ProgressBar
