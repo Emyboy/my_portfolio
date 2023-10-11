@@ -1,3 +1,5 @@
+import { VARS } from '@/DATABASE'
+import Link from 'next/link'
 import React from 'react'
 
 export default function CertificateInfoCard() {
@@ -12,8 +14,8 @@ export default function CertificateInfoCard() {
 					<div className="img-box">
 						<img src="assets/images/me.png" alt="About Me" />
 					</div>
-					<h2>David Henderson</h2>
-					<p>@davidhenderson</p>
+					<h2>{VARS.full_name}</h2>
+					<p>@emeka_ifeora</p>
 
 					<ul className="social-links d-flex justify-content-center">
 						<li>
@@ -38,9 +40,9 @@ export default function CertificateInfoCard() {
 						</li>
 					</ul>
 
-					<a href="contact.html" className="theme-btn">
+					<Link href="/contact" className="theme-btn">
 						Contact Me
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>

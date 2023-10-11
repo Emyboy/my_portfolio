@@ -1,4 +1,5 @@
 import BlogCategoryCard from '@/components/blog/BlogCategoryCard'
+import BlogSideBar from '@/components/blog/BlogSideBar'
 import EachBlogCardLG from '@/components/blog/EachBlogCardLG'
 import React from 'react'
 
@@ -31,22 +32,7 @@ export default function page() {
 							</div>
 						</div>
 						<div className="col-md-4">
-							<div className="blog-sidebar">
-								<div className="blog-sidebar-inner">
-									<div class="blog-sidebar-widget search-widget">
-										<div
-											class="blog-sidebar-widget-inner aos-init aos-animate"
-											data-aos="zoom-in"
-										>
-											<form class="shadow-box">
-												<input type="text" placeholder="Search Here..." />
-												<button class="theme-btn">Search</button>
-											</form>
-										</div>
-									</div>
-                                    <BlogCategoryCard />
-								</div>
-							</div>
+							<BlogSideBar />
 						</div>
 					</div>
 				</div>
