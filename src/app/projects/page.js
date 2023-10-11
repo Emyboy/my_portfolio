@@ -1,4 +1,4 @@
-import EachProjectCardSM from '@/components/EachProjectCardSM'
+import EachProjectCardSM from '@/components/projects/EachProjectCardSM'
 import React from 'react'
 
 export default function page() {

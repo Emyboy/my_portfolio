@@ -14,12 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
 		<html lang="en">
-			{/* <head>
+			<head>
 				<link
 					rel="stylesheet"
 					href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
 				/>
-			</head> */}
+			</head>
 			<body
 				data-aos-easing="ease"
 				data-aos-duration="1500"
