@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HomeServiceCard() {
   return (
     <div data-aos="zoom-in" class="flex-1 aos-init aos-animate">
       <div class="about-services-box info-box shadow-box h-full">
-        <a href="service.html" class="overlay-link"></a>
+        <Link href="/skills" class="overlay-link"></Link>
         <img src="/assets/images/bg1.png" alt="BG" class="bg-img" />
         <div class="icon-boxes">
           <i class="iconoir-camera"></i>
@@ -18,9 +19,9 @@ export default function HomeServiceCard() {
             <h1>Services Offering</h1>
           </div>
 
-          <a href="service.html" class="about-btn">
+          <Link href="/skills" class="about-btn">
             <img src="/assets/images/icon.svg" alt="Button" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

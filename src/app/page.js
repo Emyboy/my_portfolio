@@ -30,7 +30,7 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-							<div className="row mt-24">
+							<div className="row- mt-24">
 								<div className="col-md-12">
 									<div className="blog-service-profile-wrap d-flex gap-24">
 										<HomeBlogCard />
